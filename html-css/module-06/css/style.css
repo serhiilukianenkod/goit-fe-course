@@ -31,6 +31,27 @@ img {
     min-height: 86px;
 }
 
+.site_logo {
+    animation: logo-appear 2s linear;
+}
+
+@keyframes logo-appear {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-200px);
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .site_navigation {
     margin: 0;
     padding: 0;
