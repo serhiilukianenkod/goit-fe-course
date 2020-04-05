@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Slab', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+header {
+    margin-bottom: 56px;
+}
+
+.container {
+    width: 940px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.page_header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 120px;
+}
+
+.site_navigation {
+    margin: 0;
+    padding: 0;
+    flex-basis: 484px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.site_navigation a {
+    display: block;
+    color: #222222;
+    text-decoration: none;
+    transition: color 200ms linear;
+}
+
+.site_navigation a:hover,
+.site_navigation a:focus {
+    color: rgb(254, 209, 54);
+}
+
+/* services section */
+
+.services {
+    margin-bottom: 108px;
+    text-align: center;
+}
+
+.services_title {
+    margin-bottom: 76px;
+}
+
+.services_title h2 {
+    font-size: 2.86rem;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(34, 34, 34);
+    margin: 0;
+}
+
+.services_title p {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1.14rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    margin: 0;
+}
+
+.services_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services_item {
+    width: 290px;
+    padding: 0 21px;
+    text-align: center;
+}
+
+.services_item h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.29rem;
+    font-weight: bold;
+    line-height: 4.167;
+    color: rgb(34, 34, 34);
+    margin: 0;
+}
+
+.services_property p {
+    color: rgb(119, 119, 119);
+    line-height: 1.2;
+    margin: 0;
+}
+
+.services_item::before {
+    content: '';
+    display: block;
+    width: 74px;
+    height: 73px;
+    margin: 0 auto;
+}
+
+.services_item:nth-child(1)::before {
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.services_item:nth-child(2)::before {
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.services_item:nth-child(3)::before {
+    background-image: url(../img/Icon-Locked.png);
+}
+
+/*form section*/
+
+.contact {
+    background-image: url(../img/MapImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 110px 0;
+}
+
+.form_title {
+    text-align: center;
+    margin-bottom: 78px;
+}
+
+.form_title h2 {
+    font-size: 2.86rem;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.form_title p {
+    font-size: 1.14rem;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    line-height: 1.2;
+    color: rgb(119, 119, 119);
+    margin: 0;
+}
+
+.user_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.user_form input {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.28rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(187, 187, 187);
+}
+
+.left {
+    width: 455px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left input {
+    width: 455px;
+    height: 52px;
+}
+
+.user_form input[name="message"] {
+    width: 455px;
+    height: 210px;
+}
+
+.user_form .submit_btn {
+    border: none;
+    margin: 32px auto;
+    width: 240px;
+    min-height: 66px;
+    border-radius: 3px;
+    background-color: rgb(254, 209, 54);
+    font-size: 1.28rem;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
