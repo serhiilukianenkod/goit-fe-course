@@ -225,6 +225,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
+    cursor: pointer;
 }
 
 /* visually-hidden helper */
